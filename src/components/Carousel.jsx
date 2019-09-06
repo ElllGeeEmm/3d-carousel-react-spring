@@ -74,7 +74,7 @@ export default function Carousel({
         window.clearTimeout(goToIn)
       }
     }
-  }, [index, goToSlide, newSlide, goToSlideState, slides.length])
+  })
 
   const clampOffsetRadius = (offsetRadius) => {
     const upperBound = Math.floor((slides.length - 1) / 2);
